@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#"><i class="fa fa-bars"></i></a></li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        
+      </ul>
+    </div>
+    <fieldset>
+      <legend>Issue Details</legend>
+      <form onsubmit="return ValidateForm(this);">
+       
+        <div class="form">
+          <table
+          style="width: 100%; max-width: 550px; border: 0"
+          cellpadding="8"
+          cellspacing="0"
+          >
+          <tr>
+            <td>
+              <label for="Name">Name<sup>*</sup>:</label>
+            </td>
+            <td>
+              <input
+              name="Name"
+              type="text"
+              maxlength="60"
+              style="width: 100%; max-width: 250px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="PhoneNumber">Phone number:</label>
+            </td>
+            <td>
+              <input
+              name="PhoneNumber"
+              type="text"
+              maxlength="43"
+              style="width: 100%; max-width: 250px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="FromEmailAddress">Email address<sup>*</sup>:</label>
+            </td>
+            <td>
+              <input
+              name="FromEmailAddress"
+              type="text"
+              maxlength="90"
+              style="width: 100%; max-width: 250px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="tags">Areas:<sup>**</sup></label>
+            </td>
+            <td>
+                <select name="tags" id="tags" multiple>
+                  <option value="hardware">Hardware</option>
+                  <option value="software">Software</option>
+                  <option value="networking">Networking</option>
+                  <option value="electricals">Electricals</option>
+                </select>
+            </td>
+            <td class="multiple"><sup>**</sup> - use ctrl key to select multiple</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Comments">Comments<sup>*</sup>:</label>
+            </td>
+            <td>
+              <textarea
+              name="Comments"
+              rows="7"
+              cols="40"
+              style="width: 100%; max-width: 350px"
+              ></textarea>
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td>Available Time:</td>
+            <td>
+              <label for="vehicle1">From</label>
+              <input type="time" id="vehicle1" name="vehicle1" value="Bike"><br><br>
+              <label for="vehicle2">TO</label> &emsp13;&emsp13;
+              <input type="time" id="vehicle2" name="vehicle2" value="Car">
+            </td>
+          </tr>
+
+          <tr class="sub">
+            <td class="req"><sup>*</sup> - required fields</td>
+            <td>
+              <input name="submit" type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      
+      </form>
+    </fieldset>
+    <footer>  <p>Copyright &copy;2013</p>
+    </footer>
+  </body>
+</html>
